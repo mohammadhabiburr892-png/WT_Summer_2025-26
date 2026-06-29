@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Service Request Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Student Service Request Portal</h1>
+        <p>Digitizing student services for a faster, cleaner, and professional experience.</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <section class="description-section">
+            <h2>Available Services</h2>
+            <p>Welcome to the Student Affairs digitization platform. Use this portal to easily submit requests for academic transcripts, ID card issues, and general inquiries. Please fill out the form below accurately to ensure quick processing.</p>
+        </section>
+
+        <div class="form-container">
+            <h2>Service Request Form</h2>
+            <form action="#" method="POST">
+                
+                <div class="form-group">
+                    <label for="student-name">Student Name:</label>
+                    <input type="text" id="student-name" name="student_name" required placeholder="Enter your full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="student-id">Student ID:</label>
+                    <input type="text" id="student-id" name="student_id" maxlength="10" required placeholder="Max 10 characters">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required placeholder="username@university.edu">
+                </div>
+
+                <div class="form-group">
+                    <label for="service-type">Service Type:</label>
+                    <select id="service-type" name="service_type">
+                        <option value="transcript">Transcript Request</option>
+                        <option value="id-card">ID Card Issue</option>
+                        <option value="inquiry">General Inquiry</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Urgency Level:</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="urgency" value="low" checked> Low</label>
+                        <label><input type="radio" name="urgency" value="medium"> Medium</label>
+                        <label><input type="radio" name="urgency" value="high"> High</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="details">Additional Details:</label>
+                    <textarea id="details" name="details" rows="4" placeholder="Provide any extra details here..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Request</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 University Student Affairs Department. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
